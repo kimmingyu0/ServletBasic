@@ -12,8 +12,7 @@
 		PW <input name=pwd><br>
 		<input type=submit>
 		<a href="/C05Join.do">회원가입</a>
-	
-	
+
 	</form>
 </body>
 </html>

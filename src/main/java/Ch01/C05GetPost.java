@@ -41,7 +41,7 @@ public class C05GetPost extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("DoGet!!!");
-		resp.sendRedirect("/05MemberJoin.jsp");
+		resp.sendRedirect("/Ch01/05MemberJoin.jsp");
 	}
 
 	@Override
@@ -66,10 +66,10 @@ public class C05GetPost extends HttpServlet{
 			int result = pstmt.executeUpdate();
 			if(result>0) {
 				System.out.println("Insert 성공");
-				resp.sendRedirect("/05Login.jsp");
+				resp.sendRedirect("/Ch01/05Login.jsp");
 			}else {
 				System.out.println("Insert 실패");
-				resp.sendRedirect("/05MemberJoin.jsp");
+				resp.sendRedirect("/Ch01/05MemberJoin.jsp");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
